@@ -1,8 +1,8 @@
 from cmath import pi
 
 from matplotlib import pyplot as plt
-classes = ['Cura','Cultivos de chás medicinais','Dôlas','Benzedeira','Simpatia','Remédio']
-data1 = [5.00,3.00,1.00,1.00, 1.00,1.00]
+classes = [' forró e bailes da terceira idade','Congado','Festa da colheita','festa dos estados','Festas Cosme e Damião','Festas de São João ','festejos das igrejas evangélicas ','marcha pela paz ','Rap e Hip-hop','Samba e Pagode']
+data1 = [1.00,1.00,2.00,1.00, 2.00,2.00,1.00,1.00,3.00,2.00]
 
 N = len(classes)
 angles = [n / float(N) * 2 * pi for n in range(N)]
