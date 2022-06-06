@@ -48,11 +48,11 @@ values += values[:1]
 ax.plot(angles, values, linewidth=1, linestyle='solid', label="group A")
 ax.fill(angles, values, 'b', alpha=0.1)
 
-# # Ind2
-# values = df.loc[1].drop('group').values.flatten().tolist()
-# values += values[:1]
-# ax.plot(angles, values, linewidth=1, linestyle='solid', label="group B")
-# ax.fill(angles, values, 'r', alpha=0.1)
+# Ind2
+values = df.loc[1].drop('group').values.flatten().tolist()
+values += values[:1]
+ax.plot(angles, values, linewidth=1, linestyle='solid', label="group B")
+ax.fill(angles, values, 'r', alpha=0.1)
 
 # Add legend
 plt.legend(loc='upper right', bbox_to_anchor=(0.1, 0.1))

@@ -1,11 +1,11 @@
 from cmath import pi
 
 from matplotlib import pyplot as plt
-classes = ['Respeito','Idoso','Recreação','Forró','MLI – Movimento de Luta dos Idosos','Projeto Raízes da Favela','Atendimento Psicológico','Bingo']
-data1 = [4.00,3.00,2.00,2.00, 2.00,2.00,1.00,1.00]
+classes = ['Respeito','Idoso','Recreação','Forró','MLI-Movimento de Luta dos idosos','Projeto Raizes da Favela','Atendimento Psicológico','Bingo']
+data1 = [4.00,3.00,2.00,2.00, 2.00,2.00,2.00,1.00,1.00]
 
 N = len(classes)
-angles = [n / int(N) * 2 * pi for n in range(N)]
+angles = [n / float(N) * 2 * pi for n in range(N)]
 angles += angles[:1]
 plt.clf()
 ax = plt.subplot(polar=True)
