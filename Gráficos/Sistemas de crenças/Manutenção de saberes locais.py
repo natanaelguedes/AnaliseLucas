@@ -18,8 +18,8 @@ plt.xticks(angles[:-1], classes)
 data1 += data1[:1]
 ax.fill(angles, data1, facecolor='blue', alpha=0.3)
 
-ax.legend([' Participação nas Festividades populares locais'], loc=(0.9, .95),  labelspacing=0.1, fontsize='small')
+ax.legend([' Manutenção de saberes locais'], loc=(0.9, .95),  labelspacing=0.1, fontsize='small')
 
-plt.title('Participação nas Festividades populares locais\n ')
+plt.title('Manutenção de saberes locais\n ')
 
 plt.show()
