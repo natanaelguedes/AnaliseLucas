@@ -30,7 +30,8 @@ plt.ylim(0,5)
 values=df.loc[0].drop('name').values.flatten().tolist()
 values += values[:1]
 ax.plot(angles, values, linewidth=1, linestyle='solid', label="John")
-ax.fill(angles, values, 'b', alpha=0.1)ax.fill(angles, values, facecolor='blue', alpha=0.3)
+ax.fill(angles, values, 'b', alpha=0.1)
+ax.fill(angles, values, facecolor='blue', alpha=0.3)
 
 # Name2
 

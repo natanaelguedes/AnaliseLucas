@@ -1,38 +1,54 @@
-import seaborn as sns
-import matplotlib.pylab as plt
+import matplotlib.pyplot as plt
 import pandas as pd
-import numpy as np
 from math import pi
-import io
-df = pd.read_csv(io.StringIO("""category	A	B
-Antisocial attitudes	6	7
-Antisocial peers	3	6
-Antisocial personality	6	2
-History of antisocial behaviour	1	4
-Family	8	1
-Education/employment	2	7
-Substance abuse	2	3"""), sep='\t')
-df
+
+# Set data
+df = pd.DataFrame({
+    'group': ['A', 'B', 'C', 'D','E','F','G','H','I','J'],
+    'var1': [4],
+    'var2': [3],
+    'var3': [2],
+    'var4': [2],
+    'var5': [2],
+    'var6': [1],
+    'var7': [1]
+})
+
+# ------- PART 1: Create background
+
+# number of variable
+categories = list(df)[1:]
+N = len(categories)
+
+# What will be the angle of each axis in the plot? (we divide the plot / number of variable)
+angles = [n / float(N) * 2 * pi for n in range(N)]
+angles += angles[:1]
+
+# Initialise the spider plot
+ax = plt.subplot(111, polar=True)
+
+# If you want the first axis to be on top:
+ax.set_theta_offset(pi / 2)
+ax.set_theta_direction(-1)
+
+# Draw one axe per variable + add labels
+plt.xticks(angles[:-1], categories)
+
+# Draw ylabels
+ax.set_rlabel_position(0)
+plt.yticks([10, 20, 30], ["10", "20", "30"], color="grey", size=7)
+plt.ylim(0, 40)
+
+# ------- PART 2: Add plots
+
+# Plot each individual = each line of the data
+# I don't make a loop, because plotting more than 3 groups makes the chart unreadable
+
+# Ind1
 
 
-def do_plot(df, col, color, ax):
-    # based on
-    categories = list(df['category'])
-    values = list(df[col])
-    values += values[:1] # repeat the first value to close the circular graph
-    angles = [n / float(len(categories)) * 2 * pi for n in range(len(categories))]
-    angles += angles[:1]
+# Add legend
+plt.legend(loc='upper right', bbox_to_anchor=(0.1, 0.1))
 
-
-    ax.set_xticks(angles[:-1])
-    ax.set_xticklabels(categories)
-    ax.set_yticks(np.arange(0, len(categories)))
-    ax.set_ylim(0, 5)
-    ax.set_rlabel_position(30)
-
-    ax.plot(angles, values, linewidth=1, color=color, linestyle='solid')
-    ax.fill(angles, values, color=color, alpha=0.4)
-    fig, ax = plt.subplots(figsize=(8, 8), subplot_kw=dict(polar=True))
-    do_plot(df=df, col='B', color='red', ax=ax)
-    do_plot(df=df, col='A', color='blue', ax=ax)
-    fig.show()
+# Show the graph
+plt.show()

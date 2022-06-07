@@ -1,8 +1,8 @@
 from cmath import pi
 
 from matplotlib import pyplot as plt
-classes = ['Cura','Cultivos de chás medicinais','Dôlas','Benzedeira','Simpatia','Remédio']
-data1 = [5.00,3.00,1.00,1.00, 1.00,1.00]
+classes = ['Protagonismo feminino','Mulher forte','Mulher da favela','Mulher guerreira','Mães solo','Mulher provedora','Violência doméstica','Creche']
+data1 = [4.00,2.00,2.00,2.00, 2.00,1.00,1.00,1.00]
 
 N = len(classes)
 angles = [n / float(N) * 2 * pi for n in range(N)]
@@ -18,8 +18,8 @@ plt.xticks(angles[:-1], classes)
 data1 += data1[:1]
 ax.fill(angles, data1, facecolor='blue', alpha=0.3)
 
-ax.legend([' Participação nas Festividades populares locais'], loc=(0.9, .95),  labelspacing=0.1, fontsize='small')
+ax.legend([' Valorização da Mulher'], loc=(0.9, .95),  labelspacing=0.1, fontsize='small')
 
-plt.title('Participação nas Festividades populares locais\n ')
+plt.title('Valorização da Mulher\n ')
 
 plt.show()

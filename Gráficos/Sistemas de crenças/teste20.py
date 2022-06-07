@@ -41,7 +41,7 @@ import matplotlib.patches as patches
 
 # Data to be represented
 # ----------
-properties = ['property 1', 'property 2', 'property 3',
+properties = ['property 1', 'property 2', 'property 3', 
               'property 4', 'property 5', 'property 6',
               'property 7', 'property 8', 'property 9']
 values = np.random.uniform(5,9,len(properties))
@@ -52,7 +52,7 @@ values = np.random.uniform(5,9,len(properties))
 matplotlib.rc('axes', facecolor = 'white')
 
 
-# Make figure background the same colors as axes
+# Make figure background the same colors as axes 
 fig = plt.figure(figsize=(10,8), facecolor='white')
 
 # Use a polar axes
@@ -106,5 +106,3 @@ for i in range(len(properties)):
 # Done
 plt.savefig('radar-chart.png', facecolor='white')
 plt.show()
-
-

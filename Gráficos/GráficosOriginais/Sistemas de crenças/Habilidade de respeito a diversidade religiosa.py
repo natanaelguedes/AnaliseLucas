@@ -4,16 +4,11 @@ from math import pi
 # Set data
 df = pd.DataFrame({
 'name': ['John','David'],
-' forró e bailes da terceira idade':[1,1],
-'Congado': [1,1],
-'Festa da colheita':  [1,1],
-'Festa dos estados':  [1,1],
-'Festas Cosme e Damião': [2, 2],
-'Festa de São João':[2,2],
-'Festejos das igrejas evangélicos':[1,1],
-'Marcha pela paz':[1,1],
-'Rap e Hip-hop':[3,3],
-'Samba e Pagode':[2,2]})
+'Respeito':  [3,3],
+'Católicos': [2,2],
+'Evangélicos':  [2,2],
+'Candonblé':  [2,2],
+'Congado to experience': [5, 1]})
 categories=list(df)[1:]
 N = len(categories)
 # What will be the angle of each axis in the plot? (we divide the plot / number of variable)
@@ -40,11 +35,10 @@ values += values[:1]
 values=df.loc[1].drop('name').values.flatten().tolist()
 values += values[:1]
 
-
+ax.fill(angles, values, 'r', alpha=0.1)
 # Add legend
-ax.fill(angles, values, facecolor='blue', alpha=0.3)
 
-ax.legend([' Participação nas Festividades populares locais'], loc=(0.9, .95),  labelspacing=0.1, fontsize='small')
+ax.legend([' Habilidade de respeito a diversidade religiosa'], loc=(0.9, .95),  labelspacing=0.1, fontsize='small')
 
-plt.title('Participação nas Festividades populares locais\n ')
+plt.title('Habilidade de respeito a diversidade religiosa\n ')
 plt.show()
