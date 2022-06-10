@@ -4,15 +4,16 @@ import plotly.graph_objects as go
 from matplotlib import pyplot as plt
 
 
-classes = ['Respeito','Idosos','Recreação','Forró','MLI – Movimento de Luta dos Idosos','Projeto Raízes da Favela','Atendimento Psicológico','Bingo']
+classes = ['Respeito','Católicos',' Evangélicos','Candonblé','Congado',
+           'Espíritas ','Umbanda','marcha pela paz ','Sincretismo','Folia de reis']
 
 
 fig = go.Figure()
 
 fig.add_trace(go.Scatterpolar(
-      r=[3,2, 2, 2,2,2,1,1],
+      r= [3.0,2.0,2.0,2.0, 2.0,2.0,1.0,1.0,1.0,1.0],
       theta=classes,
       fill='toself',
-      name='Manutenção de saberes locais'
+      name='Habilidade de respeito a diversidade religiosa'
 ))
 fig.show()

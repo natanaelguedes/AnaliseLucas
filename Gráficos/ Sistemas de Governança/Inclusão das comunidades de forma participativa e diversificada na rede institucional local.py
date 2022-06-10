@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plt
+mport matplotlib.pyplot as plt
 import pandas as pd
 from math import pi
 # Set data
