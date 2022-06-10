@@ -2,7 +2,7 @@ from cmath import pi
 
 from matplotlib import pyplot as plt
 classes = ['igreja católicas ','Várias denominações evangélicas','Regiões afro-brasileira','Centro espíritas']
-data1 = [1.00,1.00, 1.00,1.00]
+data1 = [1,1,1,1]
 
 N = len(classes)
 angles = [n / float(N) * 2 * pi for n in range(N)]
