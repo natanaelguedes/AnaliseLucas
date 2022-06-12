@@ -2,13 +2,15 @@
 
 import plotly.graph_objects as go
 
-categories = ['Respeito','Idoso','Recreação','Forró','MLI-Movimento de Luta dos idosos','Projeto Raizes da Favela','Atendimento Psicológico','Bingo']
+
+classes = ['Protagonismo feminino','Mulher forte','Mulher da favela','Mulher guerreira','Mães solo','Mulher provedora','Violência doméstica','Creche']
+
 
 fig = go.Figure()
 
 fig.add_trace(go.Scatterpolar(
-      r = [4.0, 3.0, 2.0,2.0,2.0,2.0,1.0,1.0],
-      theta=categories,
+      r = [4.00,2.00,2.00,2.00, 2.00,1.00,1.00,1.00],
+      theta=classes,
       fill='toself',
       name='Respeito a Ancianidade'))
 
@@ -18,7 +20,7 @@ fig.update_layout(
       visible=True,
       range=[0, 4]
     )),
-  showlegend=False
+  showlegend=True
 )
 
 fig.show()

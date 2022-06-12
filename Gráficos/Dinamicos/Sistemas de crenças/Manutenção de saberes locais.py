@@ -1,16 +1,15 @@
 
 
 import plotly.graph_objects as go
-
-categories = ['Participação em conselhos',' Diminuição na participação ','Conselhos perderam força ']
+categories = ['Cura','Cultivos de chás medicinais','Dôlas','Benzedeira','Simpatia','Remédio']
 
 fig = go.Figure()
 
 fig.add_trace(go.Scatterpolar(
-      r = [5.0, 2.0,2.0],
+      r = [5.0, 3.0, 1.0,1.0,1.0],
       theta=categories,
       fill='toself',
-      name='Participação em conselhos consultivos ou deliberativos'))
+      name='Manutenção de saberes locais'))
 
 fig.update_layout(
   polar=dict(

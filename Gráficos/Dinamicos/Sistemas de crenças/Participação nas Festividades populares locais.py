@@ -17,7 +17,7 @@ fig.update_layout(
       visible=True,
       range=[0, 3]
     )),
-  showlegend=False
+  showlegend=True
 )
 
 fig.show()

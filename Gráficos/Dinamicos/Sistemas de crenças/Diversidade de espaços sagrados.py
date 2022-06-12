@@ -1,4 +1,7 @@
+from tkinter import font
+
 import plotly.graph_objects as go
+from numpy import size
 
 categories = ['Igrejas católicas','Várias denominações evangélicas','Religiões afro-brasileiras',
               'Centros espíritas']
@@ -12,13 +15,14 @@ fig.add_trace(go.Scatterpolar(
       name='Diversidade de espaços sagrados'
 ))
 
+
 fig.update_layout(
   polar=dict(
     radialaxis=dict(
       visible=True,
-      range=[0, 3]
+      range=[0, 1]
     )),
-  showlegend=False
+  showlegend=True
 )
 
 fig.show()

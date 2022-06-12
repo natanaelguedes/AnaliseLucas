@@ -1,23 +1,24 @@
 
 
 import plotly.graph_objects as go
-categories = ['Cura','Cultivos de chás medicinais','Dôlas','Benzedeira','Simpatia','Remédio']
+
+categories = ['Dialoga bem','Representatividade',' Comunidade','Resistências']
 
 fig = go.Figure()
 
 fig.add_trace(go.Scatterpolar(
-      r = [5.0, 3.0, 1.0,1.0,1.0],
+      r = [3.0,2.0, 2.0,1.0],
       theta=categories,
       fill='toself',
-      name='Manutenção de saberes locais'))
+      name='Habilidade das comunidades em interagir de modo intersetorial'))
 
 fig.update_layout(
   polar=dict(
     radialaxis=dict(
       visible=True,
-      range=[0, 5]
+      range=[0, 3]
     )),
-  showlegend=False
+  showlegend=True
 )
 
 fig.show()
