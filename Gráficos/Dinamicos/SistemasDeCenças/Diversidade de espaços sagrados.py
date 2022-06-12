@@ -1,6 +1,7 @@
 from tkinter import font
 
 import plotly.graph_objects as go
+from matplotlib import pyplot as plt
 from numpy import size
 
 categories = ['Igrejas católicas','Várias denominações evangélicas','Religiões afro-brasileiras',
@@ -24,5 +25,6 @@ fig.update_layout(
     )),
   showlegend=True
 )
+plt.savefig('C:\\Users\\natan\\PycharmProjects\\AnaliseLucas\\Gráficos\\Dinamicos\\Diversidade e espaços sagrados.png', format='png')
 
 fig.show()
