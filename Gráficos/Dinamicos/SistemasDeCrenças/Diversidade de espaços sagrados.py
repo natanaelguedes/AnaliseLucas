@@ -25,6 +25,6 @@ fig.update_layout(
     )),
   showlegend=True
 )
-plt.savefig('C:\\Users\\natan\\PycharmProjects\\AnaliseLucas\\Gráficos\\Dinamicos\\Diversidade e espaços sagrados.png', format='png')
+plt.savefig('C:\\Users\\natan\\PycharmProjects\\AnaliseLucas\\Gráficos\\Dinamicos\\Imagens\\Sistemasdecrencas\\Diversidedade e espaços sagrados.png', format='png')
 
 fig.show()
