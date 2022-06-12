@@ -1,25 +1,28 @@
 from cmath import pi
 
 from matplotlib import pyplot as plt
-classes = ['Cura','Cultivos de chás medicinais','Dôlas','Benzedeira','Simpatia','Remédio']
-data1 = [5.00,3.00,1.00,1.00, 1.00,1.00]
+import plotly.graph_objects as go
 
-N = len(classes)
-angles = [n / float(N) * 2 * pi for n in range(N)]
-angles += angles[:1]
-plt.clf()
-ax = plt.subplot(polar=True)
-ax.set_theta_offset(pi / 2)
-ax.set_theta_direction(-1)
+categories = ['Muitas iniciativas','Lixo', 'Abandono','Racismo Ambiental']
 
-plt.xticks(angles[:-1], classes)
+fig = go.Figure()
 
 
-data1 += data1[:1]
-ax.fill(angles, data1, facecolor='blue', alpha=0.3)
+fig.add_trace(go.Scatterpolar(
+      r=[ 4,2, 2,1],
+      theta=categories,
+      fill='toself',
+      name='Habilidade de recuperação de áreas degradadas',
+      fillcolor='tomato'
+))
 
-ax.legend([' Participação nas Festividades populares locais'], loc=(0.9, .95),  labelspacing=0.1, fontsize='small')
+fig.update_layout(
+  polar=dict(
+    radialaxis=dict(
+      visible=True,
+      range=[0, 4]
+    )),
+  showlegend=True
+)
 
-plt.title('Participação nas Festividades populares locais\n ')
-
-plt.show()
+fig.show()
