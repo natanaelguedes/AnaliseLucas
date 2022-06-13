@@ -22,5 +22,6 @@ fig.update_layout(
         )),
     showlegend=True
 )
+plt.savefig('C:\\Users\\natan\\PycharmProjects\\Antigo\\Analise02\\01-Sistema de crenças\\image\\-Habilidade de respeito a diversidade religiosa', format='png')
 
 fig.show()
