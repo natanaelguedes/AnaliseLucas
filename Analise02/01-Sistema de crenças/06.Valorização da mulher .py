@@ -1,6 +1,6 @@
 
 import plotly.graph_objects as go
-
+from matplotlib import pyplot as plt
 
 classes = ['Protagonismo feminino','Mulher forte','Mulher da favela','Mulher guerreira',
            'Mães solo','Mulher provedora','Violência doméstica','Creche']
@@ -8,7 +8,7 @@ classes = ['Protagonismo feminino','Mulher forte','Mulher da favela','Mulher gue
 
 fig = go.Figure()
 fig.add_trace(go.Scatterpolar(
-    r=[4,2,2,2,2,1,1,1],
+    r=[4,2,2,2,2,1,1],
     theta=classes,
     fill='toself',
     name='Valorização da mulher',

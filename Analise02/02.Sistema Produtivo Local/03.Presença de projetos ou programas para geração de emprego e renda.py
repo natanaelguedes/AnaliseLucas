@@ -1,6 +1,6 @@
 
 import plotly.graph_objects as go
-
+from matplotlib import pyplot as plt
 
 classes = ['Gerar renda','Economia circular ','Produção de máscaras','Falta de projetos']
 
@@ -22,5 +22,6 @@ fig.update_layout(
         )),
     showlegend=True
 )
+plt.savefig('C:\\Users\\natan\\PycharmProjects\\Antigo\Analise02\\02.Sistema Produtivo Local\\image\\Presença de projetos ou programas para geração de emprego e renda', format='png')
 
 fig.show()

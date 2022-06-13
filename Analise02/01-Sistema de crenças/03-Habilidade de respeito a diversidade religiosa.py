@@ -2,6 +2,7 @@
 
 
 import plotly.graph_objects as go
+from matplotlib import pyplot as plt
 
 categories20 = ['Respeito','Católicos','Evangélicos','Candonblé','Congado','Espiritas','Umbanda','Macha da paz',
            'Sincretismo','Folia de reis']

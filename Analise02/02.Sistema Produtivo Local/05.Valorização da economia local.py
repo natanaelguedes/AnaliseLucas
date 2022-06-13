@@ -1,8 +1,7 @@
 
 
 import plotly.graph_objects as go
-
-
+from matplotlib import pyplot as plt
 
 classes = ['Comércio local ','Influencers digitais','Excelentes prestadores de serviço ',
            'Comércio variado','Confiança','Vender fiado']
@@ -24,5 +23,6 @@ fig.update_layout(
         )),
     showlegend=True
 )
+plt.savefig('C:\\Users\\natan\\PycharmProjects\\Antigo\Analise02\\02.Sistema Produtivo Local\\image\\Valorizacao de economia local', format='png')
 
 fig.show()
