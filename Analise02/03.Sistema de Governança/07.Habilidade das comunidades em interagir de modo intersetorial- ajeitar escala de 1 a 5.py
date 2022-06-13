@@ -2,17 +2,17 @@
 
 
 import plotly.graph_objects as go
+from matplotlib import pyplot as plt
 
-
-classes = ['Comunidade participa','Abaixo assinados ','Ocupação',' Solicitação comunitáriae ']
+classes = ['Dialoga bem','Representatividade ','Comunidade',' Resistências ']
 
 
 fig = go.Figure()
 fig.add_trace(go.Scatterpolar(
-    r=[5,3,2,2],
+    r=[3,2,2,1],
     theta=classes,
     fill='toself',
-    name='Participação nas tomadas de decisões coletivas',
+    name='Habilidade das comunidades em interagir de modo intersetorial',
     fillcolor="red", opacity=0.6, line=dict(color="red")
 
 ))
@@ -24,5 +24,6 @@ fig.update_layout(
         )),
     showlegend=True
 )
+plt.savefig('C:\\Users\\natan\\PycharmProjects\\Antigo\Analise02\\03.Sistema de Governança\\image\\Habilidade das comunidades em interagir de modo intersetorial', format='png')
 
 fig.show()

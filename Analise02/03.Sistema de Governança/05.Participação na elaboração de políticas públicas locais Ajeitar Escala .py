@@ -2,7 +2,7 @@
 
 
 import plotly.graph_objects as go
-
+from matplotlib import pyplot as plt
 
 classes = ['Participação comunitária','Orçamento participativo ','Obras',' Enchente']
 
@@ -24,5 +24,5 @@ fig.update_layout(
         )),
     showlegend=True
 )
-
+plt.savefig('C:\\Users\\natan\\PycharmProjects\\Antigo\Analise02\\03.Sistema de Governança\\image\\Participação na elaboração de políticas públicas locais', format='png')
 fig.show()

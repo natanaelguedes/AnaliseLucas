@@ -2,9 +2,9 @@
 
 
 import plotly.graph_objects as go
+from matplotlib import pyplot as plt
 
-
-classes = ['Comunidade participa','Abaixo assinados ','Ocupação',' Solicitação comunitáriae ']
+classes = ['Comunidade participa','Abaixo assinados ','Ocupação',' Solicitação comunitária ']
 
 
 fig = go.Figure()
@@ -24,5 +24,6 @@ fig.update_layout(
         )),
     showlegend=True
 )
+plt.savefig('C:\\Users\\natan\\PycharmProjects\\Antigo\Analise02\\03.Sistema de Governança\\image\\Participação nas tomadas de decisões coletivas', format='png')
 
 fig.show()
