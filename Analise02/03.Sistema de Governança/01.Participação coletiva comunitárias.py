@@ -24,3 +24,34 @@ plt.title('Presença de espaços sociais organizados\n')
 
 
 plt.show()
+
+
+
+
+
+
+import plotly.graph_objects as go
+
+
+classes = ['Faltam projetos coletivos  ','Horta coletiva','Projeto de psicultura']
+
+
+fig = go.Figure()
+fig.add_trace(go.Scatterpolar(
+    r=[9,2,1],
+    theta=classes,
+    fill='toself',
+    name='Participação coletiva comunitária na gestão de negócios',
+    fillcolor="red", opacity=0.6, line=dict(color="red")
+
+))
+fig.update_layout(
+    polar=dict(
+        radialaxis=dict(
+            visible=True,
+            range=[0, 6]
+        )),
+    showlegend=True
+)
+
+fig.show()

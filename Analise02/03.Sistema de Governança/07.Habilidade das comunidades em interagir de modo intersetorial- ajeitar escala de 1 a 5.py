@@ -3,23 +3,25 @@ from cmath import pi
 
 from matplotlib import pyplot as plt
 classes = ['Dialoga bem ','Representatividade','Comunidade',' Resistências']
-data1 = [3.00, 2.00, 2.00,1.00]
-N = len(classes)
-angles = [n / float(N) * 2 * pi for n in range(N)]
-angles += angles[:1]
-plt.clf()
-ax = plt.subplot(polar=True)
-ax.set_theta_offset(pi / 2)
-ax.set_theta_direction(-1)
-
-plt.xticks(angles[:-1], classes)
 
 
-data1 += data1[:1]
-ax.fill(angles, data1, facecolor='orange', alpha=0.3)
 
-ax.legend([' Habilidade das comunidades em interagir de modo intersetorial'], loc=(0.9, .95),  labelspacing=0.1, fontsize='small')
+fig = go.Figure()
+fig.add_trace(go.Scatterpolar(
+    r=[3,2,2,1],
+    theta=classes,
+    fill='toself',
+    name='Habilidade das comunidades em interagir de modo intersetorial',
+    fillcolor="red", opacity=0.6, line=dict(color="red")
 
-plt.title('Habilidade das comunidades em interagir de modo intersetorial \n')
+))
+fig.update_layout(
+    polar=dict(
+        radialaxis=dict(
+            visible=True,
+            range=[0, 6]
+        )),
+    showlegend=True
+)
 
-plt.show()
+fig.show()

@@ -1,7 +1,5 @@
 import plotly.graph_objects as go
-
-
-
+from matplotlib import pyplot as plt
 
 classes = ['Igreja católicas','Várias denominações evangélicas','Religiões afro-brasileiras','Centros espíritas']
 
@@ -11,7 +9,7 @@ fig.add_trace(go.Scatterpolar(
     theta=classes,
     fill='toself',
     name='Habilidade de respeito a diversidade religiosa',
-    fillcolor="orange", opacity=0.6, line=dict(color="orange")
+    fillcolor="blue", opacity=0.6, line=dict(color="blue")
 
 ))
 fig.update_layout(
@@ -22,5 +20,7 @@ fig.update_layout(
         )),
     showlegend=True
 )
+
+plt.savefig('C:\\Users\\natan\\PycharmProjects\\Antigo\\Analise02\\01-Sistema de crenças\\image\\DiversidadesDeEspacosSagrados.jpg', format='png')
 
 fig.show()

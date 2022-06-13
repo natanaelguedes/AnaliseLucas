@@ -12,7 +12,7 @@ fig.add_trace(go.Scatterpolar(
     theta=classes,
     fill='toself',
     name='Valorização da mulher',
-    fillcolor="orange", opacity=0.6, line=dict(color="orange")
+    fillcolor="blue", opacity=0.6, line=dict(color="blue")
 
 ))
 fig.update_layout(

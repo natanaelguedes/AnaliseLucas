@@ -11,7 +11,7 @@ fig.add_trace(go.Scatterpolar(
     theta=classes,
     fill='toself',
     name='Existência de arranjos organizacionais como cooperativas ou associação de catadores de materiais recicláveis, carroceiros e outros',
-    fillcolor="orange", opacity=0.6, line=dict(color="orange")
+    fillcolor="yellow", opacity=0.6, line=dict(color="yellow")
 
 ))
 fig.update_layout(

@@ -11,7 +11,7 @@ fig.add_trace(go.Scatterpolar(
     theta=classes,
     fill='toself',
     name='Presença de projetos ou programas para geração de emprego e renda',
-    fillcolor="orange", opacity=0.6, line=dict(color="orange")
+    fillcolor="yellow", opacity=0.6, line=dict(color="yellow")
 
 ))
 fig.update_layout(

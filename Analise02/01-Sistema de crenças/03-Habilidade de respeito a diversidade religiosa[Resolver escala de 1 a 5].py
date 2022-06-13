@@ -11,14 +11,14 @@ fig.add_trace(go.Scatterpolar(
     theta=categories20,
     fill='toself',
     name='Habilidade de respeito a diversidade religiosa',
-    fillcolor="orange", opacity=0.6, line=dict(color="orange")
+    fillcolor="blue", opacity=0.6, line=dict(color="blue")
 
 ))
 fig.update_layout(
     polar=dict(
         radialaxis=dict(
             visible=True,
-            range=[0, 4]
+            range=[0, 6]
         )),
     showlegend=True
 )
