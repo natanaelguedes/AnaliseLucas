@@ -22,6 +22,6 @@ fig.update_layout(
         )),
     showlegend=True
 )
-plt.savefig('C:\\Users\\natan\\PycharmProjects\\Antigo\Analise02\\02.Sistema Produtivo Local\\image\\Participação coletiva comunitária na gestão de negócios', format='png')
+plt.savefig('C:\\Users\\natan\\PycharmProjects\\Antigo\Analise02\\02.Sistema Produtivo Local\\image\\Participação coletiva comunitária na gestão de negócios.jpg', format='png')
 
 fig.show()

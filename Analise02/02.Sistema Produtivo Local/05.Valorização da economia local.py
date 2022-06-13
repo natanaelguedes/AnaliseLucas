@@ -23,6 +23,6 @@ fig.update_layout(
         )),
     showlegend=True
 )
-plt.savefig('C:\\Users\\natan\\PycharmProjects\\Antigo\Analise02\\02.Sistema Produtivo Local\\image\\Valorizacao de economia local', format='png')
+plt.savefig('C:\\Users\\natan\\PycharmProjects\\Antigo\Analise02\\02.Sistema Produtivo Local\\image\\Valorizacao de economia local.jpg', format='png')
 
 fig.show()
