@@ -16,11 +16,11 @@ fig.update_layout(
     polar=dict(
         radialaxis=dict(
             visible=True,
-            range=[0, 3]
+            range=[1, 3]
         )),
     showlegend=True
 )
 
-plt.savefig('C:\\Users\\natan\\PycharmProjects\\Antigo\\Analise02\\04-Sistema de crenças\\image\\DiversidadesDeEspacosSagrados', format='png')
+plt.savefig('C:\\Users\\natan\\PycharmProjects\\Antigo\\Analise02\\01-Sistema de crenças\\image\\DiversidadesDeEspacosSagrados', format='png')
 
 fig.show()

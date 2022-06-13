@@ -1,17 +1,18 @@
 
-from cmath import pi
 
-from matplotlib import pyplot as plt
-classes = ['Dialoga bem ','Representatividade','Comunidade',' Resistências']
 
+import plotly.graph_objects as go
+
+
+classes = ['Comunidade participa','Abaixo assinados ','Ocupação',' Solicitação comunitáriae ']
 
 
 fig = go.Figure()
 fig.add_trace(go.Scatterpolar(
-    r=[3,2,2,1],
+    r=[5,3,2,2],
     theta=classes,
     fill='toself',
-    name='Habilidade das comunidades em interagir de modo intersetorial',
+    name='Participação nas tomadas de decisões coletivas',
     fillcolor="red", opacity=0.6, line=dict(color="red")
 
 ))
@@ -19,7 +20,7 @@ fig.update_layout(
     polar=dict(
         radialaxis=dict(
             visible=True,
-            range=[0, 6]
+            range=[1, 6]
         )),
     showlegend=True
 )

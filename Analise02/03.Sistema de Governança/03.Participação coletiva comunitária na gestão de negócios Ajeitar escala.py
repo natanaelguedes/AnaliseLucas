@@ -1,28 +1,28 @@
 
 
-from cmath import pi
 
-from matplotlib import pyplot as plt
-classes = ['Faltam projetos coletivos','Horta coletiva','Projeto de psicultura'
-           ]
-data1 = [9.00, 2.00, 1.00]
-N = len(classes)
-angles = [n / float(N) * 2 * pi for n in range(N)]
-angles += angles[:1]
-plt.clf()
-ax = plt.subplot(polar=True)
-ax.set_theta_offset(pi / 2)
-ax.set_theta_direction(-1)
-
-plt.xticks(angles[:-1], classes)
+import plotly.graph_objects as go
 
 
-data1 += data1[:1]
-ax.fill(angles, data1, facecolor='orange', alpha=0.3)
+classes = ['Faltam projetos coletivos ','Horta coletiva','Projeto de psicultura ']
 
 
+fig = go.Figure()
+fig.add_trace(go.Scatterpolar(
+    r=[6,3,2],
+    theta=classes,
+    fill='toself',
+    name='Participação coletiva comunitária na gestão de negócios',
+    fillcolor="red", opacity=0.6, line=dict(color="red")
 
-ax.legend([' Participação coletiva comunitária na gestão de negócios  '], loc=(0.9, .95),  labelspacing=0.1, fontsize='small')
-plt.title('Participação coletiva comunitária na gestão de negócios \n' )
+))
+fig.update_layout(
+    polar=dict(
+        radialaxis=dict(
+            visible=True,
+            range=[1, 8]
+        )),
+    showlegend=True
+)
 
-plt.show()
+fig.show()

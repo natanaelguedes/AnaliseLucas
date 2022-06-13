@@ -4,7 +4,7 @@
 import plotly.graph_objects as go
 
 
-classes = ['Comunidade participa','Abaixo assinados ','Ocupação',' Solicitação comunitária']
+classes = ['Comunidade participa','Abaixo assinados ','Ocupação',' Solicitação comunitáriae ']
 
 
 fig = go.Figure()
@@ -20,7 +20,7 @@ fig.update_layout(
     polar=dict(
         radialaxis=dict(
             visible=True,
-            range=[0, 6]
+            range=[1, 6]
         )),
     showlegend=True
 )
