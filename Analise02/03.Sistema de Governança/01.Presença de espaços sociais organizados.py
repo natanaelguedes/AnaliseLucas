@@ -16,8 +16,8 @@ fig.add_trace(go.Scatterpolar(
     r=[2,2, 2, 1,1,1],
     theta=classes,
     fill='toself',
-    name='Valorizaçao de economia local',
-    fillcolor="yellow", opacity=0.6, line=dict(color="yellow")
+    name='Presença de espaços sociais organizados',
+    fillcolor="red", opacity=0.6, line=dict(color="red")
 
 ))
 fig.update_layout(
@@ -28,6 +28,5 @@ fig.update_layout(
         )),
     showlegend=True
 )
-plt.savefig('C:\\Users\\natan\\PycharmProjects\\Antigo\Analise02\\03.Sistema de Governança\\image\\presenca espaços organizados', format='png')
 
 fig.show()

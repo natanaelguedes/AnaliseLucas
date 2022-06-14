@@ -1,6 +1,9 @@
 
 from cmath import pi
 
+
+
+import plotly.graph_objects as go
 from matplotlib import pyplot as plt
 classes = ['Ribeirão Arrudas ','Poluição','Mina','Inundação']
 

@@ -22,6 +22,5 @@ fig.update_layout(
         )),
     showlegend=True
 )
-plt.savefig('C:\\Users\\natan\\PycharmProjects\\Antigo\Analise02\\02.Sistema Produtivo Local\\image\\Existência de arranjos organizacionais como cooperativas ou associação de catadores de materiais recicláveis, carroceiros e outros.jpg', format='png')
 
 fig.show()

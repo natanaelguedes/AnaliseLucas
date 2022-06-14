@@ -24,6 +24,5 @@ fig.update_layout(
         )),
     showlegend=True
 )
-plt.savefig('C:\\Users\\natan\\PycharmProjects\\Antigo\Analise02\\03.Sistema de Governança\\image\\Habilidade das comunidades em interagir de modo intersetorial', format='png')
 
 fig.show()

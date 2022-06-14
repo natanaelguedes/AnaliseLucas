@@ -24,6 +24,5 @@ fig.update_layout(
         )),
     showlegend=True
 )
-plt.savefig('C:\\Users\\natan\\PycharmProjects\\Antigo\Analise02\\03.Sistema de Governança\\image\\Inclusão das comunidades de forma participativa e diversificada na rede institucional local', format='png')
 
 fig.show()

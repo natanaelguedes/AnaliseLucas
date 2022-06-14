@@ -24,6 +24,5 @@ fig.update_layout(
         )),
     showlegend=True
 )
-plt.savefig('C:\\Users\\natan\\PycharmProjects\\Antigo\Analise02\\03.Sistema de Governança\\image\\Participação coletiva comunitária na gestão de negócios', format='png')
 
 fig.show()

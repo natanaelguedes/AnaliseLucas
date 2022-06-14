@@ -27,7 +27,6 @@ fig.update_layout(
         )),
     showlegend=True
 )
-plt.savefig('teste.png', format='png')
 
 fig.show()
 

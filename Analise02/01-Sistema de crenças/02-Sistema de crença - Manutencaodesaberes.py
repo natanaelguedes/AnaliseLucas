@@ -25,4 +25,3 @@ fig.update_layout(
 
 fig.show()
 
-plt.savefig('C:\\Users\\natan\\PycharmProjects\\Antigo\\Analise02\\01-Sistema de crenças\\image\\Manutencaodesaberes.jpg', format='png')
