@@ -4,7 +4,7 @@
 import plotly.graph_objects as go
 from matplotlib import pyplot as plt
 
-classes = ['Participação em conselhos   ','Diminuição na participação','Conselhos perderam força']
+classes = ['Participação em conselhos','Diminuição na participação','Conselhos perderam força']
 
 
 fig = go.Figure()
