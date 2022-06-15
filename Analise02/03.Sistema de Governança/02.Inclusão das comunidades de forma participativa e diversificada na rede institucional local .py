@@ -20,7 +20,7 @@ fig.update_layout(
     polar=dict(
         radialaxis=dict(
             visible=True,
-            range=[1, 8]
+            range=[0, 7]
         )),
     showlegend=True
 )
