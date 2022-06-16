@@ -8,7 +8,7 @@ fig.add_trace(go.Scatterpolar(
     r=[1,1,1,1],
     theta=classes,
     fill='toself',
-    name='Habilidade de respeito a diversidade religiosa',
+    name='Diversidade de espaços sagrados ',
     fillcolor="blue", opacity=0.6, line=dict(color="blue")
 
 ))
