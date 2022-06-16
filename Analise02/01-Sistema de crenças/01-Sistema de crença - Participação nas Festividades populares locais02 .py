@@ -1,13 +1,13 @@
-
-
-from matplotlib import pyplot as plt
-from pygments.formatters import img
 import plotly.graph_objects as go
 
-categories20 = ['Cura','Cultivo chás medicinais','Dôlas','Benzedeira','Simpatia','Remédio']
+categories20=[' Forró e bailes da terceira idade ','Congado','Festa da colheita',
+           'Festa dos estados', 'Festas Cosme e Damião',' Festas de São João ',
+           'Festejos das igrejas evangélicas ','Marcha pela paz','Rap e Hip-hop',
+           'Samba e Pagode']
 fig = go.Figure()
+
 fig.add_trace(go.Scatterpolar(
-    r=[5,3,1,1,1,1],
+    r=[1, 1, 2, 1,2,2,1,1, 3,2],
     theta=categories20,
     fill='toself',
     name='Manutenção de saberes locais  ',
@@ -22,6 +22,4 @@ fig.update_layout(
         )),
     showlegend=True
 )
-
 fig.show()
-
