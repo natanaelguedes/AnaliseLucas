@@ -11,7 +11,7 @@ fig.add_trace(go.Scatterpolar(
     r=[1, 1, 2, 1,2,2,1,1, 3,2],
     theta=categories20,
     fill='toself',
-    name='Manutenção de saberes locais  ',
+    name='Participação nas Festividades populares locais  ',
     fillcolor="blue", opacity=0.6, line=dict(color="blue")
 
 ))
@@ -23,6 +23,5 @@ fig.update_layout(
         )),
     showlegend=True
 )
-plt.savefig('C:\\Users\\natan\\PycharmProjects\\Antigo\\Analise02\\01-Sistema de crenças\\01-Sistema de crença - Participação nas Festividades populares locais.png')
 
 fig.show()
