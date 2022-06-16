@@ -1,4 +1,5 @@
 import plotly.graph_objects as go
+from matplotlib import pyplot as plt
 
 categories20=[' Forró e bailes da terceira idade ','Congado','Festa da colheita',
            'Festa dos estados', 'Festas Cosme e Damião',' Festas de São João ',
@@ -22,4 +23,6 @@ fig.update_layout(
         )),
     showlegend=True
 )
+plt.savefig('C:\\Users\\natan\\PycharmProjects\\Antigo\\Analise02\\01-Sistema de crenças\\01-Sistema de crença - Participação nas Festividades populares locais.png')
+
 fig.show()
