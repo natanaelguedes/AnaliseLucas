@@ -2,15 +2,15 @@
 import plotly.graph_objects as go
 from matplotlib import pyplot as plt
 
-classes = ['Negócios de reciclagem','Feiras de alimentos','Carroceiros','Cooperativismo']
+classes = ['Protagonismo feminino','Mulher forte','Mulher guerreira','Mães solo','Mulher provedora','Violência doméstica','Creche']
 
 
 fig = go.Figure()
 fig.add_trace(go.Scatterpolar(
-    r=[2,2,1,1],
+    r=[4,2,2,2,2,1,1,1],
     theta=classes,
     fill='toself',
-    name='Existência de arranjos organizacionais como cooperativas ou associação de catadores de materiais recicláveis, carroceiros e outros',
+    name='Valorização da Mulher',
     fillcolor="blue", opacity=0.6, line=dict(color="blue")
 
 ))
