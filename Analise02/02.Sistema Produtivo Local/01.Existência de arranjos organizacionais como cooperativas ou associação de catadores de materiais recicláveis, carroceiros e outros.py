@@ -1,6 +1,5 @@
 
 import plotly.graph_objects as go
-from matplotlib import pyplot as plt
 
 classes = ['Negócios de reciclagem','Feiras de alimentos ','Carroceiros','Cooperativismo']
 
@@ -20,7 +19,7 @@ fig.update_layout(
             visible=True,
             range=[0,3]
         )),
-    showlegend=True
+    showlegend=False
 )
 
 fig.show()
