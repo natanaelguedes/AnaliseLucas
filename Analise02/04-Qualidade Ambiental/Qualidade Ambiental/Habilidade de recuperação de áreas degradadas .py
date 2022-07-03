@@ -1,9 +1,9 @@
 import plotly.graph_objects as go
 
-categories20 = ['Muitas iniciativas', 'Lixo', 'Abandono', 'Racismo Ambiental']
+categories20 = ['Educação ambiental','Muitas iniciativas', 'Lixo', 'Abandono', 'Racismo Ambiental']
 fig = go.Figure()
 fig.add_trace(go.Scatterpolar(
-    r=[4,2,2, 1],
+    r=[1,4,2,2, 1],
     theta=categories20,
     fill='toself',
     name='Habilidade de recuperação de áreas degradadas',
