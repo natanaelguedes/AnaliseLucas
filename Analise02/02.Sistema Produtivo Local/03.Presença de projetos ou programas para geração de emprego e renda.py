@@ -2,12 +2,12 @@
 import plotly.graph_objects as go
 from matplotlib import pyplot as plt
 
-classes = ['Gerar renda','Economia circular ','Produção de máscaras','Falta de projetos']
+classes = ['Gerar renda','Economia circular ','Produção de máscaras','Falta de projetos','Projeto Novo  Trilho']
 
 
 fig = go.Figure()
 fig.add_trace(go.Scatterpolar(
-    r=[2,1,1,1],
+    r=[2,1,1,1,1],
     theta=classes,
     fill='toself',
     name='Presença de projetos ou programas para geração de emprego e renda',

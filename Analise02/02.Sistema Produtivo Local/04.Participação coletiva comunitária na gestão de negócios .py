@@ -2,7 +2,7 @@
 import plotly.graph_objects as go
 from matplotlib import pyplot as plt
 
-classes = ['Faltam projetos coletivos','Horta coletiva ','Projeto de psicultura']
+classes = ['Faltam projetos coletivos','Horta coletiva ','Projeto de piscicultura']
 
 
 fig = go.Figure()
@@ -18,7 +18,7 @@ fig.update_layout(
     polar=dict(
         radialaxis=dict(
             visible=True,
-            range=[0, 10]
+            range=[0, 9]
         )),
     showlegend=True
 )
