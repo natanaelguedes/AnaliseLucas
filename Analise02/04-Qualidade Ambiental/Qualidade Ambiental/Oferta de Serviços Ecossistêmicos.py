@@ -1,27 +1,14 @@
 
+import matplotlib.pyplot as plt
+plt.title('Oferta de Serviços Ecossistêmicos')
+# Pie chart, where the slices will be ordered and plotted counter-clockwise:
+labels =  ['Faltam áreas preservadas', 'Poucos serviços ecossistêmicos']
+sizes = [4, 3]
+
+plt.pie(sizes, labels=labels, autopct='%1.1f%%',
+        shadow=True, startangle=90)
+plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+
+plt.show()
 
 
-import plotly.graph_objects as go
-
-categories = ['Faltam áreas preservadas', 'Poucos serviços ecossistêmicos']
-fig = go.Figure()
-
-fig.add_trace(go.Scatterpolar(
-      r=[4, 3],
-      theta=categories,
-      fill='toself',
-      name='Oferta de Serviços Ecossistêmicos',
-      fillcolor="orange", opacity=0.6, line=dict(color="orange")
-
-))
-
-fig.update_layout(
-  polar=dict(
-    radialaxis=dict(
-      visible=True,
-      range=[0, 5]
-    )),
-  showlegend=True
-)
-
-fig.show()
